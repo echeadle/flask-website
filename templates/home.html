@@ -22,7 +22,11 @@
             job openings!.</p>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra suspendisse potenti nullam ac tortor. Odio eu feugiat pretium nibh ipsum consequat. Pharetra convallis posuere morbi leo urna molestie. Felis bibendum ut tristique et egestas quis. Tempus urna et pharetra pharetra massa massa. Sed sed risus pretium quam. Accumsan in nisl nisi scelerisque eu ultrices vitae. Vitae congue mauris rhoncus aenean. Velit egestas dui id ornare arcu odio ut sem nulla.</p>
             <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-            <p>TODO - Show Jobs here</p>
+            <div>
+                {% for job in jobs %}
+                    {% include 'jobitem.html'%}
+                {% endfor %}
+            </div>
             <div class="text-center">
                 <button class="btn btn-primary btn-lg">Contact Us</button>
                 <p class="mt-4">Copyright 2022, GOP</p>
